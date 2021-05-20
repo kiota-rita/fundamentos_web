@@ -8,93 +8,52 @@
     <title>Neko wo kaburu</title>
 </head>
 <body>
-    <ul id="menu">
-        <li>
-            <a href="index.html"> Home</a>
-        </li>
-        <li>
-            <a href="contato.html"> Curiosidades</a>
-        </li>
-        <li>
-            <a href="https://fjsp.org.br/lingua-japonesa/" target="_blank"> Fundação Japão</a>
-        </li>
-    </ul>
-    <hr>
-
-    <h1 id="curiosidades">Neko wo kaburu</h1>
-
-    <div class="container">
-        <img src="https://i2.wp.com/www.otakupt.com/wp-content/uploads/2020/01/Filme-anime-Nakitai-Watashi-wa-Neko-o-Kaburu-em-Junho.jpg?fit=1280%2C720&ssl=1" title="Cena do Filme: Nakitai Watashi wa Neko wo Kaburu" width="500">
-        <div class="p-30">
-            <p class="c1">O idioma japonês tem várias expressões relacionadas a gatos e o país cultiva um carinho especial pelos bichanos, 
-                com destaque para a Hello Kitty e os gatinhos da prosperidade. E essa expressão está exatamente relacionada com
-                gatos.</p>
-                <ul>
-                <li>Neko = gato</li>
-                <li>Kaburu = cobrir-se ou por na cabeça</li>
-                </ul>
-        </div>
+    <div class="containerMenu">
+        <ul id="menu">
+            <li>
+                <a href="index.html"> Home</a>
+            </li>
+            <li>
+                <a href="contato.html"> Contato</a>
+            </li>
+            <li>
+                <a href="https://fjsp.org.br/lingua-japonesa/" target="_blank"> Fundação Japão</a>
+            </li>
+        </ul>
     </div>
 
-    <div class="container">
         <div class="p-30">
-            <p class="c1">Essa expressão japonesa indica a pessoa que está escondendo a sua verdadeira personalidade. Diferentemente de um 
-                cachorro, que costuma correr para pedir carinho e brincar, interpretar o que um gato quer é, de fato, bem mais 
-                difícil.
-                Se você tem uma personalidade, digamos, um pouco mais agitada e quer esconder esse entusiasmo em determinada 
-                situação, você pode “se cobrir com um gato”.
-            </p>
-            <p class="c1">Se você é daquelas pessoas que fala alto o que pensa e dá gargalhadas fatais, pode já ter precisado 
-               “se cobrir com um gato” na frente do professor, dos parentes distantes ou do futuro chefe em uma entrevista de 
-               emprego.
-            </p>
-        </div>
-        <img src="https://i.pinimg.com/originals/b4/f1/92/b4f1927b99e403646852f5f285f2c94e.jpg" title="Cena do Filme: Nakitai Watashi wa Neko wo Kaburu" width="500">
-    </div>
+            <h3 class="center">Para saber mais entre em contato</h3>
     
-    <div class="container"> 
-        <img src="https://i.ytimg.com/vi/biR50pTNDb4/maxresdefault.jpg" title="Cena do Filme: Nakitai Watashi wa Neko wo Kaburu" width="500">
-        <div class="p-30">
-            <p class="c1">Apesar de adorados, os gatos surgem também como seres sobrenaturais (Yōkais) em diversas histórias do folclore 
-                japonês. É dito que essas referências surgiram por conta de algumas características dos gatos: hábitos noturnos, 
-                unhas afiadas, habilidade de se aproximar sem fazer barulho, comportamento caprichoso e misterioso, pupila que 
-                muda de formato, etc.
-            </p>
-            <p class="c1">Um dos Yōkais mais famosos do Japão é bakeneko 化け猫, que são gatos com poderes sobrenaturais que podem ser 
-                leais e carinhosos, mas que também podem ser bem assustadores nas histórias do folclore japonês.Por essas e 
-                outras, “cobrir-se com um gato” pode ajudar a criar uma boa primeira impressão.
-            </p>
-        </div>
-    </div>
-
-    <div class="p-30">
-        <h3 class="center">Para saber mais entre em contato</h3>
-    <div class="container mb-50">
-        <div>
-        <form>
-            <label for="nome">Nome:</label><br>
-            <br>
-            <input type="nome" id="nome">
-            <br>
-            <br>
-            <label for="email">E-mail:</label><br>
-            <br>
-            <input type="email" id="email">
-            <br>
-            <br>
-            <label for="assunto">Assunto:</label><br>
-            <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+            <div class="container mb-50">
+                <div>
         
-        <hr>
-        </form>
+                    <form>
+                        <label for="nome">Nome:</label><br>
+                        <input type="nome" id='nome' onkeyup="validaNome()">
+                        <div id="txtNome"></div>
+                        <br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id='email' onkeyup="validaEmail()">
+                        <div id="txtEmail"></div>
+                        <br>
+                        <label for="assunto">Assunto:</label><br>
+                        <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"></textarea>
+                        <div id="txtAssunto"></div>
+                        <br>
+                        <br>
+                        <button onclick="enviar()">Enviar</button>
+                    </form> 
+                </div>
+                <div class="ml-50">
+                    <h2>Endereço:</h2>
+                    <p>Avenida Brigadeiro Faria Lima, 1811</p>
+                    <p>São Paulo - SP</p>
+            
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7397473925485!2d-46.68878978538365!3d-23.577788768083476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce576db16f56a3%3A0xdf2dded615839e5f!2sAv.%20Brg.%20Faria%20Lima%2C%201811%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001452-001!5e0!3m2!1spt-BR!2sbr!4v1621356373237!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
+                    </div>
+            </div>  
         </div>
-         <div class="ml-50">  
-            <h2>Endereço:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7397473925485!2d-46.68878978538365!3d-23.577788768083476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce576db16f56a3%3A0xdf2dded615839e5f!2sAv.%20Brg.%20Faria%20Lima%2C%201811%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001452-001!5e0!3m2!1spt-BR!2sbr!4v1621356373237!5m2!1spt-BR!2sbr" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-    </div>
-    </div>
     
     <hr>
     <footer> <!-- Rodapé -->
@@ -113,5 +72,9 @@
             Todos os direitos reservados: Rita Kiota &copy <!--&copy símbolo para copyright-->
         </p>
     </footer>
+        
+</body>
+
+    <script src="../fundamentos_web/assets/js/script.js"></script>
 </body>
 </html>
